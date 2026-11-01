@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로도 (Rodo)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700&f[]=general-sans@400,500,600&display=swap">
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      :root {
+        --color-primary: #E8562A;
+        --color-canvas: #0D0D0B;
+        --color-surface: #F5F4F1;
+        --color-surface-dark: #181815;
+        --color-text: #1D1B18;
+        --color-text-on-canvas: #E8E6E1;
+        --color-text-muted: #6B6560;
+        --color-accent: #B8431D;
+        --color-glow-primary: rgba(232, 86, 42, 0.35);
+        --font-display: 'Cabinet Grotesk', sans-serif;
+        --font-body: 'General Sans', sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+      }
+      body {
+        font-family: var(--font-body);
+        background: var(--color-canvas);
+        color: var(--color-text-on-canvas);
+        min-height: 100dvh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
